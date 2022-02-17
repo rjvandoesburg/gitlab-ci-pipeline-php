@@ -2,10 +2,10 @@
 
 > Docker images with everything you'll need to build and test PHP applications.
 
-![Logo](https://raw.githubusercontent.com/edbizarro/gitlab-ci-pipeline-php/master/gitlab-ci-pipeline-php.png)
+![Logo](https://raw.githubusercontent.com/rjvandoesburg/gitlab-ci-pipeline-php/master/gitlab-ci-pipeline-php.png)
 
 ---
-![GitHub last commit](https://img.shields.io/github/last-commit/edbizarro/gitlab-ci-pipeline-php.svg?style=for-the-badge&logo=git) [![Docker Pulls](https://img.shields.io/docker/pulls/edbizarro/gitlab-ci-pipeline-php.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/edbizarro/gitlab-ci-pipeline-php/) [![building status](https://gitlab.com/edbizarro/gitlab-ci-pipeline-php/badges/master/pipeline.svg)](https://gitlab.com/edbizarro/gitlab-ci-pipeline-php/commits/master)
+![GitHub last commit](https://img.shields.io/github/last-commit/rjvandoesburg/gitlab-ci-pipeline-php.svg?style=for-the-badge&logo=git) [![Docker Pulls](https://img.shields.io/docker/pulls/rjvandoesburg/gitlab-ci-pipeline-php.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/rjvandoesburg/gitlab-ci-pipeline-php/) [![building status](https://gitlab.com/rjvandoesburg/gitlab-ci-pipeline-php/badges/master/pipeline.svg)](https://gitlab.com/rjvandoesburg/gitlab-ci-pipeline-php/commits/master)
 
 ---
 
@@ -13,31 +13,12 @@
 
 > PHP 8.0 available!
 
-- ```8.0```, ```8```, ```latest``` [(8.0/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/8.0/Dockerfile) - [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:8.0.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:8.0 "Get your own image badge on microbadger.com")
+- ```8.0```, ```8```, ```latest``` [(8.0/Dockerfile)](https://github.com/rjvandoesburg/gitlab-ci-pipeline-php/blob/master/php/8.0/Dockerfile) - [![](https://images.microbadger.com/badges/image/rjvandoesburg/gitlab-ci-pipeline-php:8.0.svg)](https://microbadger.com/images/rjvandoesburg/gitlab-ci-pipeline-php:8.0 "Get your own image badge on microbadger.com")
 
-- ```8.0-alpine```, ```alpine``` [(8.0/alpine/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/8.0/alpine/Dockerfile) - [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:8.0-alpine.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:8.0-alpine "Get your own image badge on microbadger.com")
+- ```8.0-fpm```, ```fpm``` [(8.0/fpm/Dockerfile)](https://github.com/rjvandoesburg/gitlab-ci-pipeline-php/blob/master/php/8.0/fpm/Dockerfile) - [![](https://images.microbadger.com/badges/image/rjvandoesburg/gitlab-ci-pipeline-php:8.0-fpm.svg)](https://microbadger.com/images/rjvandoesburg/gitlab-ci-pipeline-php:8.0-fpm "Get your own image badge on microbadger.com")
 
-
-- ```8.0-fpm```, ```fpm``` [(8.0/fpm/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/8.0/fpm/Dockerfile) - [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:8.0-fpm.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:8.0-fpm "Get your own image badge on microbadger.com")
-
-- ```7.4```, ```7``` [(7.4/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/7.4/Dockerfile) - [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:7.4.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:7.4 "Get your own image badge on microbadger.com")
-
-- ```7.4-alpine```, ```alpine``` [(7.4/alpine/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/7.4/alpine/Dockerfile) - [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:7.4-alpine.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:7.4-alpine "Get your own image badge on microbadger.com")
-
-
-- ```7.4-fpm```, ```fpm``` [(7.4/fpm/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/7.4/fpm/Dockerfile) - [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:7.4-fpm.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:7.4-fpm "Get your own image badge on microbadger.com")
-
-- ```7.3``` [(7.3/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/7.3/Dockerfile) - [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:7.3.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:7.3 "Get your own image badge on microbadger.com")
-
-- ```7.3-alpine``` [(7.3/alpine/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/7.3/alpine/Dockerfile) - [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:7.3-alpine.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:7.3-alpine "Get your own image badge on microbadger.com")
-
-- ```7.3-alpine-lts```, ```alpine-lts``` [(7.3/alpine/Dockerfile-lts)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/7.3/alpine/Dockerfile-lts) - [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:7.3-alpine-lts.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:7.3-alpine-lts "Get your own image badge on microbadger.com")
-
-- ```7.3-fpm``` [(7.3/fpm/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/7.3/fpm/Dockerfile) - [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:7.3-fpm.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:7.3-fpm "Get your own image badge on microbadger.com")
 
 All versions come with [Node 14](https://nodejs.org/en/), [Composer](https://getcomposer.org/) and [Yarn](https://yarnpkg.com)
-
-> PHP 7.0.x, 7.1.x and PHP 7.2.x are now deprecated and removed from this repo since they reach end of life. Your scripts will not stop working since the images are still available but they will not be receiving new builds from now on. For more information please visit https://www.php.net/supported-versions.php
 
 ---
 
@@ -46,18 +27,6 @@ All versions come with [Node 14](https://nodejs.org/en/), [Composer](https://get
 All images come with PHP (with all laravel required extensions), Composer (with [hirak/prestissimo](https://github.com/hirak/prestissimo) to speed up installs), Node and [Yarn](https://yarnpkg.com).
 
 Everything you need to test Laravel projects :D
-
-### Laravel Dusk
-
-To run Dusk tests we need chromium installed on the image, because of that we have a special tag for this case.
-
-- ```8.0-chromium``` [(8.0/chromium/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/8.0/chromium/Dockerfile) [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:8.0-chromium.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:8.0-chromium "Get your own image badge on microbadger.com")
-- ```7.4-chromium``` [(7.4/chromium/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/7.4/chromium/Dockerfile) [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:7.4-chromium.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:7.4-chromium "Get your own image badge on microbadger.com")
-- ```7.3-chromium``` [(7.3/chromium/Dockerfile)](https://github.com/edbizarro/gitlab-ci-pipeline-php/blob/master/php/7.3/chromium/Dockerfile) [![](https://images.microbadger.com/badges/image/edbizarro/gitlab-ci-pipeline-php:7.3-chromium.svg)](https://microbadger.com/images/edbizarro/gitlab-ci-pipeline-php:7.3-chromium "Get your own image badge on microbadger.com")
-
-Check *Dusk example* for more details.
-
----
 
 ## Gitlab pipeline examples
 
@@ -78,7 +47,7 @@ test:
   stage: test
   services:
     - mysql:5.7
-  image: edbizarro/gitlab-ci-pipeline-php:8.0-alpine
+  image: rjvandoesburg/gitlab-ci-pipeline-php:8.0
   script:
     - yarn install --pure-lockfile
     - composer install --prefer-dist --no-ansi --no-interaction --no-progress
@@ -117,7 +86,7 @@ test:
   stage: test
   services:
     - mysql:5.7
-  image: edbizarro/gitlab-ci-pipeline-php:8.0-alpine
+  image: rjvandoesburg/gitlab-ci-pipeline-php:8.0
   script:
     - yarn config set cache-folder .yarn
     - yarn install --pure-lockfile
@@ -134,75 +103,10 @@ test:
 
 deploy:
   stage: deploy
-  image: edbizarro/gitlab-ci-pipeline-php:8.0-alpine
+  image: rjvandoesburg/gitlab-ci-pipeline-php:8.0-alpine
   script:
     - echo "Deploy all the things!"
   only:
     - master
   when: on_success
 ```
-
-#### Laravel Dusk tests ```.gitlab-ci.yml``` using mysql service and cache
-
-```yaml
-stages:
-  - test
-
-# Variables
-variables:
-  MYSQL_ROOT_PASSWORD: root
-  MYSQL_USER: homestead
-  MYSQL_PASSWORD: secret
-  MYSQL_DATABASE: homestead
-  DB_HOST: mysql
-
-# Speed up builds
-cache:
-  key: $CI_BUILD_REF_NAME # changed to $CI_COMMIT_REF_NAME in Gitlab 9.x
-  paths:
-    - vendor
-    - node_modules
-    - public
-    - .yarn
-
-
-test:
-  stage: test
-  services:
-    - mysql:5.7
-  image: edbizarro/gitlab-ci-pipeline-php:8.0-chromium
-  script:
-    - yarn config set cache-folder .yarn
-    - yarn install --pure-lockfile
-    - composer install --prefer-dist --no-ansi --no-interaction --no-progress
-    - cp .env.example .env
-    - php artisan key:generate
-    - php artisan migrate:refresh --seed
-    - php artisan serve &
-    - ./vendor/laravel/dusk/bin/chromedriver-linux --port=9515 &
-    - sleep 5
-    - php artisan dusk
-  artifacts:
-    paths:
-      - ./storage/logs # for debugging
-      - ./tests/Browser/screenshots # for Dusk screenshots
-      - ./tests/Browser/console
-    expire_in: 7 days
-    when: always
-```
----
-
-## Deploying Laravel applications with Gitlab
-
-Recommended
-
-- [Deployer](https://deployer.org/blog/how-to-deploy-laravel)
-- [Envoyer](https://envoyer.io)
-
----
-
-Special thanks to [Ambientum](https://github.com/codecasts/ambientum), an incredible Brazilian project, for the inspiration.
-
-[![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)

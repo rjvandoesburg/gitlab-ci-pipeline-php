@@ -3,14 +3,14 @@ FROM php:8.0
 ARG BUILD_DATE
 ARG VCS_REF
 
-LABEL maintainer="Eduardo Bizarro <edbizarro@gmail.com>" \
+LABEL maintainer="Robert-John van Doesburg <rjvandoesburg@gmail.com>" \
   PHP="8.0" \
   NODE="14" \
-  org.label-schema.name="edbizarro/gitlab-ci-pipeline-php" \
+  org.label-schema.name="rjvandoesburg/gitlab-ci-pipeline-php" \
   org.label-schema.description=":coffee: Docker images for build and test PHP applications with Gitlab CI (or any other CI plataform!)" \
   org.label-schema.build-date=$BUILD_DATE \
   org.label-schema.schema-version="1.0" \
-  org.label-schema.vcs-url="https://github.com/edbizarro/gitlab-ci-pipeline-php" \
+  org.label-schema.vcs-url="https://github.com/rjvandoesburg/gitlab-ci-pipeline-php" \
   org.label-schema.vcs-ref=$VCS_REF
 
 # Set correct environment variables
@@ -30,10 +30,13 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 COPY ./php/scripts/*.sh /tmp/
 RUN chmod +x /tmp/*.sh
 
+ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
+RUN chmod +x /usr/local/bin/install-php-extensions
+
 # Install2
-RUN bash ./packages.sh \
-  && bash ./extensions.sh \
-  && bash ./node.sh \
+RUN bash ./packages.sh
+RUN bash ./extensions.sh
+RUN bash ./node.sh \
   && adduser --disabled-password --gecos "" $IMAGE_USER && \
   echo "PATH=$(yarn global bin):$PATH" >> /root/.profile && \
   echo "PATH=$(yarn global bin):$PATH" >> /root/.bashrc && \

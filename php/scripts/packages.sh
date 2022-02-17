@@ -25,11 +25,11 @@ export DEBIAN_FRONTEND=noninteractive
       build-essential \
       curl \
       git \
+      procps \
       gnupg2 \
       jq \
       libc-client-dev \
       mariadb-client \
-      mongo-tools \
       openssh-client \
       python \
       python-dev \
