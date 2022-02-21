@@ -1,10 +1,10 @@
-FROM php:8.0-fpm
+FROM php:8.1
 
 ARG BUILD_DATE
 ARG VCS_REF
 
 LABEL maintainer="Robert-John van Doesburg <rjvandoesburg@gmail.com>" \
-  PHP="8.0" \
+  PHP="8.1" \
   NODE="14" \
   org.label-schema.name="rjvandoesburg/gitlab-ci-pipeline-php" \
   org.label-schema.description=":coffee: Docker images for build and test PHP applications with Gitlab CI (or any other CI plataform!)" \
@@ -19,7 +19,7 @@ ENV HOME=/home/$IMAGE_USER
 ENV COMPOSER_HOME=$HOME/.composer
 ENV PATH=$HOME/.yarn/bin:$PATH
 ENV GOSS_VERSION="0.3.16"
-ENV PHP_VERSION=8.0
+ENV PHP_VERSION=8.1
 
 USER root
 
@@ -33,16 +33,17 @@ RUN chmod +x /tmp/*.sh
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 RUN chmod +x /usr/local/bin/install-php-extensions
 
-# Install
+# Install2
 RUN bash ./packages.sh
 RUN bash ./extensions.sh
 RUN bash ./node.sh \
   && adduser --disabled-password --gecos "" $IMAGE_USER && \
+  echo "PATH=$(yarn global bin):$PATH" >> /root/.profile && \
+  echo "PATH=$(yarn global bin):$PATH" >> /root/.bashrc && \
   echo "$IMAGE_USER  ALL = ( ALL ) NOPASSWD: ALL" >> /etc/sudoers && \
-  mkdir -p /var/www/html && \
-  chown -R $IMAGE_USER:$IMAGE_USER /var/www $HOME \
+  mkdir -p /var/www/html \
   && rm -rf ~/.composer/cache/* \
-  && chown -R $IMAGE_USER:$IMAGE_USER $COMPOSER_HOME \
+  && chown -R $IMAGE_USER:$IMAGE_USER /var/www $HOME \
   && curl -fsSL https://goss.rocks/install | GOSS_VER=v${GOSS_VERSION} sh \
   && bash ./cleanup.sh
 
